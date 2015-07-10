@@ -39,7 +39,7 @@ report_sxw.report_sxw(
     'stock.move',
     'addons/stock_moves_report/report/stock_moves.rml',
     parser=moves_parser,
-    header=True
+    header='internal landscape',
 )
 
 
