@@ -37,6 +37,7 @@
   <images/>
   <story>
 <!--TABLA DE ITEMS-->   
+<para>[[ setLang(user.lang) ]]</para>
 <section>
   <para style="ITEMSRIGHT"> </para>
   <para style="HEADER">Reporte de Movimiento de existencias</para>

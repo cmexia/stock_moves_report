@@ -27,7 +27,7 @@
     "name": "stock moves report", 
     "version": "0.1", 
     "author": "cmexia", 
-    "category": "Generic Modules/Others", 
+    "category": "TyP", 
     "description": """
 This Module allow you to get an stock moves report in stock.
 """, 

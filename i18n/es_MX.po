@@ -1,6 +1,6 @@
 # Translation of OpenERP Server.
 # This file contains the translation of the following modules:
-#	* product_label_report
+#	* stock_moves_report
 #
 msgid ""
 msgstr ""
@@ -15,26 +15,36 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-#: model:ir.actions.report.xml,name:product_label_report.label_report_large
-msgid "Product Label Report large"
-msgstr "Etiqueta Grande"
+#: model:ir.actions.report.xml,name:stock_moves_report.stock_moves_report
+msgid "Stock Moves Report"
+msgstr "Movimientos de existencias"
 
-#: model:ir.actions.report.xml,name:product_label_report.label_report_small
-msgid "Product Label Report Small"
-msgstr "Etiqueta Mini"
+#. module: stock_moves_report
+#: report:stock_moves:0
+msgid "done"
+msgstr "Hecho"
 
-#. module: product_label_report
-#: report:label_report_large:0
-msgid "Default code:"
-msgstr "Ref. interna:"
+#. module: stock_moves_report
+#: report:stock_moves:0
+msgid "confirmed"
+msgstr "Espera exist."
 
-#. module: product_label_report
-#: report:label_report_large:0
-msgid "Category:"
-msgstr "Categoria:"
+#. module: stock_moves_report
+#: report:stock_moves:0
+msgid "cancel"
+msgstr "Cancelado"
 
-#. module: product_label_report
-#: report:label_report_large:0
-msgid "Prod unit of measure:"
-msgstr "Unidad de Medida:"
+#. module: stock_moves_report
+#: report:stock_moves:0
+msgid "in"
+msgstr "Recepción merc."
 
+#. module: stock_moves_report
+#: report:stock_moves:0
+msgid "out"
+msgstr "Envio merc."
+
+#. module: stock_moves_report
+#: report:stock_moves:0
+msgid "internal"
+msgstr "Interno"
