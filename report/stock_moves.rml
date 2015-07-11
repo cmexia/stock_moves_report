@@ -54,7 +54,7 @@
     </section>
   <para style="ITEMSRIGHT"></para>
   <para style="ITEMSRIGHT"></para>
-  <blockTable repeatRows="1" colWidths="56.0,120.0,70.0,70.0,50.0,55.0,67.0,65.0,65.0,50.0" style="TABLEHEADER">
+  <blockTable repeatRows="1" colWidths="56.0,120.0,70.0,70.0,50.0,55.0,67.0,65.0,65.0,50.0,40.0" style="TABLEHEADER">
           <tr>
             <td><para style="TABLEHEADER">Fecha</para></td>
             <td><para style="TABLEHEADER">Descripcion</para></td>
@@ -66,10 +66,11 @@
             <td><para style="TABLEHEADER">Origen</para></td>
             <td><para style="TABLEHEADER">Destino</para></td>
             <td><para style="TABLEHEADER">Estado</para></td>
+            <td><para style="TABLEHEADER">Stock</para></td>
           </tr>
    </blockTable>
  </pto_header>
- <blockTable repeatRows="1" colWidths="56.0,120.0,70.0,70.0,50.0,55.0,67.0,65.0,65.0,50.0" style="TABLEHEADER">
+ <blockTable repeatRows="1" colWidths="56.0,120.0,70.0,70.0,50.0,55.0,67.0,65.0,65.0,50.0,40.0" style="TABLEHEADER">
           <tr>
             <td><para style="TABLEHEADER">Fecha</para></td>
             <td><para style="TABLEHEADER">Descripcion</para></td>
@@ -81,13 +82,14 @@
             <td><para style="TABLEHEADER">Origen</para></td>
             <td><para style="TABLEHEADER">Destino</para></td>
             <td><para style="TABLEHEADER">Estado</para></td>
+            <td><para style="TABLEHEADER">Stock</para></td>
           </tr>
    </blockTable>
  <section>
     <para>[[repeatIn(objects,'o')]]</para>
     <para>[[ setLang(user.lang) ]]</para>
                 <!--TABLA de PRODUCT-->
-    <blockTable colWidths="56.0,120.0,70.0,70.0,50.0,55.0,67.0,65.0,65.0,50.0" style="TERMSTABLEGREY">
+    <blockTable colWidths="56.0,120.0,70.0,70.0,50.0,55.0,67.0,65.0,65.0,50.0,40.0" style="TERMSTABLEGREY">
           <!-- <tr><td><para style="ITEMSRIGHT">[[o.product_id or '']]</para></td></tr> -->
           <tr>
             <td><para style="ITEMSRIGHT">[[o.date_expected or '']]</para></td>
@@ -100,6 +102,7 @@
             <td><para style="ITEMSRIGHT">[[o.location_id.name or '']]</para></td>
             <td><para style="ITEMSRIGHT">[[o.location_dest_id.name or '']]</para></td>
             <td><para style="ITEMSRIGHT">[[o.state]]</para></td>
+            <td><para style="ITEMSRIGHT">[[formatLang(o.product_id.qty_available, digits=0)]]</para></td>
           </tr>
           <!-- <tr><td><para style="ITEMSRIGHT">[[o.id.qty_request or '']]</para></td></tr> -->
     </blockTable>
